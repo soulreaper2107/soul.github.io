@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portfolio Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cs1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+        <body>
+            <div class="hero-header">
+                <div calss="wrapper">
+                    <header>
+                        <div class="logo">
+                            <i class="fa-solid fa-r"></i>
+                            <div class="logo-text">Ryu Pascua</div>
+                        </div>
+                        <nav>
+                            <div class="togglebtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="navlinks">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#meep">About Me</a></li>
+                                <li><a href="#goal">Goal</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="container">
+                        <div class="hero-pic">
+                            <img src="pic.jpg" alt="pic">
+                        </div>
+                        <div class="hero-text">
+                            <h5>Hi I'm <span class="input">Aspiring Programmer</span></h5>
+                            <h1>Ryu Pascua</h1>
+                            <p>Hello, I'm Ryu Pascua, a first-year college student at Gordon College pursuing a Bachelor's degree in Computer Science. My passion lies in becoming a versatile web developer and programmer, with a particular interest in creating solutions for online games. I am excited about the prospect of contributing to the dynamic world of technology and gaming through my skills and knowledge.</p>
+                            <div class="btn-group">
+                                <a href="Resume/Pascua.pdf" download="Resume-Pasuca.pdf" class="btn activate">Download Resume</a>
+                            </div>
+                            <div class="social">
+                                <a href="https://www.facebook.com/ryu.pascua.31"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/soulonabs/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="meep" class="meep">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-me">
+                            <h1>About Me</h1>
+                            <p>
+                                Hey there! I'm Ryu Pascua, an 18-year-old college student at Gordon College, and I'm all about the exciting world of computer science. Computers have been my thing since I was a kid, sparking my curiosity and leading me to pursue a degree in computer science to chase my dreams. Specifically, I'm aiming to become a programmer and game developer—how cool would that be?
+                            </p>
+                            <p class="p2">When I'm not in class, you can probably find me in a Valorant match, navigating the digital challenges and enjoying the strategic thrills of the game. But it's not all about the virtual world for me; I love the real-world action too, especially when I'm on the volleyball court. Spiking and serving are not just moves in a game; they're my way of expressing the precision and coordination that I find fascinating in the coding world.  
+                            </p>
+                            <p class="p3">
+                                Speaking of coding, I spend a good chunk of my time studying and experimenting with it. There's something incredibly satisfying about taking a problem, breaking it down, and turning it into functional code. Gordon College is like my playground, providing me with the tools and knowledge to shape my dreams into reality.
+                            </p>
+                            <p class="p4">
+                                So, here I am, navigating the ins and outs of computer science, not just to acquire skills, but to pave the way for a future where my childhood fascination with computers becomes a rewarding career as a programmer and game developer. The journey is exciting, and I'm ready for every bit of it!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="goal" class="goal">
+                <div class="container">
+                    <div class="row">
+                        <h1>Goal</h1>
+                        <p>My ultimate goal is to secure a well-paying job before turning 22, alongside opening a bank account to smartly save up for the future. With dreams of becoming a web, game developer and programmer, I'm committed to studying hard and honing my skills. The path might be challenging, but I'm determined to put in the effort to turn my aspirations into reality. By focusing on both academic pursuits and skill development, I aim to not just meet but exceed my goals, setting the stage for a fulfilling career and financial stability.</p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+            <script>
+                var togglebtn=document.querySelector(".togglebtn");
+                var nav=document.querySelector(".navlinks");
+                var links=document.querySelector(".navlinks")
+                
+                togglebtn.addEventListener("click", function(){
+                    this.classlist.togglebtn("click");
+                    nav.classlist.toggle("open")
+                })
+
+
+                var typed=new Typed(".input", {
+                    strings:["Aspiring Programmer","Gordon College Student","Aspiring WebDev"],
+                    typedSpeed: 80,
+                    backSpeed: 55,
+                    loop:true
+                })
+            </script>
+         </body> 
+
+</html>
